@@ -54,4 +54,11 @@ plt.xlabel("Allergy (1 = No, 2 = Yes)")
 
 # Adjust layout so labels don't overlap and display the plots
 plt.tight_layout()
-plt.show()
+
+# Save the visualizations to a PDF file instead of just showing them on screen
+plt.savefig("lung_cancer_visuals.pdf", format="pdf", bbox_inches="tight")
+
+print("✅ Visualizations successfully saved to 'lung_cancer_visuals.pdf'")
+
+# Optional: If you still want to see the UI popup after saving, uncomment the line below
+# plt.show()
